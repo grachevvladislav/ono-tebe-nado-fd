@@ -1,1 +1,88 @@
-/* место для вашего кода */
+.header {
+    display: grid;
+    grid-template-columns: 1fr 160px 1fr;
+    padding: 91px 45px 92px 45px;
+    font-size: 18px;
+    align-items: center;
+}
+
+.header__menu {
+    display: flex;
+    list-style-type: circle;
+    text-transform: lowercase;
+    text-underline-offset: 4px;
+    white-space: nowrap;
+    gap: 28px;
+    text-indent: 5px;
+}
+
+.header__links-list-item_no-bullet {
+    list-style-type: none;
+}
+
+.header__link_active {
+    text-decoration: none;
+}
+
+.header__logo {
+    display: block;
+}
+
+.header__logo-image {
+    height: 105px;
+}
+
+.header__address {
+    justify-self: right;
+    list-style-type: none;
+    max-width: 240px;
+    margin-right: 5px;
+    text-underline-offset: 4px;
+    line-height: 1.35;
+}
+
+.address_2 {
+    text-decoration: none;
+}
+
+.cover {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../images/cover.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.cover__title {
+    display: grid;
+    grid-template-rows: repeat(3, auto);
+    padding: 165px 50px 106px 50px;
+    gap: 20px;
+    font-size: 100px;
+    letter-spacing: 0.3em;
+    line-height: 115%;
+    font-weight: 700;
+}
+
+.cover__title span {
+    display: block;
+}
+
+.cover__title_center {
+    text-align: center;
+    margin-right: -0.3em;
+}
+
+.cover__title_right {
+    text-align: right;
+    margin-right: -0.3em;
+}
+
+.description {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 50px 50px 50px;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 28px;
+}
